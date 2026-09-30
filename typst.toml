@@ -1,0 +1,14 @@
+# Instalada como paquete local (@local/somosaguas) en el entorno de la Nueva Somosaguas:
+# se importa desde cualquier carpeta, y «typst init @local/somosaguas:0.1.0 trabajo»
+# crea un documento nuevo con la plantilla.
+[package]
+name = "somosaguas"
+version = "0.1.0"
+entrypoint = "template.typ"
+authors = ["Nueva Somosaguas"]
+description = "La plantilla de la Nueva Somosaguas: EB Garamond, notas al margen y los colores de la web."
+exclude = ["fonts", "ejemplo.typ"]
+
+[template]
+path = "plantilla"
+entrypoint = "main.typ"

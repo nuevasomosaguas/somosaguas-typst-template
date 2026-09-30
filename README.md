@@ -4,6 +4,18 @@ Plantilla de Typst que empaqueta la tipografía Garamond, el estilo inspirado en
 
 ## Uso
 
+En el entorno de la Nueva Somosaguas viene instalada como paquete local, con EB Garamond y Fira Code en el sistema: se importa desde cualquier carpeta, sin copiar nada, y `typst init` crea un documento nuevo con ella.
+
+```sh
+typst init @local/somosaguas:0.1.0 mi-trabajo
+```
+
+```typst
+#import "@local/somosaguas:0.1.0": somosaguas, nota
+```
+
+Fuera del entorno, se copia `template.typ` junto al documento:
+
 ```typst
 #import "template.typ": somosaguas, nota
 
